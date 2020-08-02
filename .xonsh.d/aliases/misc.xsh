@@ -1,0 +1,1 @@
+aliases['catfifo'] = 'tail -n +1 -f'

@@ -1,0 +1,9 @@
+#!/usr/bin/env xonsh
+
+setxkbmap -option "shift:both_capslock"
+setxkbmap -option "caps:escape"
+setxkbmap -option compose:102
+setxkbmap -option altwin:swap_lalt_lwin
+
+# Don't know why the setxkbmap doesn't work in exwm, but apparently this does
+xmodmap -e "keycode 66 = Escape"

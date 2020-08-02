@@ -1,0 +1,5 @@
+aliases['e'] = 'emacs'
+aliases['eeval'] = '/home/brian/.oh-my-zsh/plugins/emacs/emacsclient.sh --eval'
+aliases['eframe'] = 'emacsclient --alternate-editor  --create-frame'
+aliases['emacs'] = '/home/brian/.oh-my-zsh/plugins/emacs/emacsclient.sh --no-wait'
+aliases['te'] = '/home/brian/.oh-my-zsh/plugins/emacs/emacsclient.sh -nw'

@@ -1,0 +1,35 @@
+xontrib load bashisms coreutils distributed fzf-widgets mpl prompt_ret_code whole_word_jumping vox
+import sys
+sys.path[0:0] = [str(p'.'), str(p'~/.xonsh.d')]
+
+from aliases.emacs import *
+from aliases.ls import *
+from aliases.misc import *
+from aliases.git import *
+from aliases.pbcopy import *
+
+from prompt import *
+
+import regex as re
+from math import ceil, comb, cos, degrees, e as E, factorial, floor, gcd, hypot, inf as oo, log, log10, log2, modf, nan, perm, pi, radians, sin, sqrt, tan, tau
+
+from prompt_toolkit.keys import Keys
+
+$PATH.add(p'~/.local/bin', front=True)
+$PATH.add(p'~/.yarn/bin')
+
+$AUTO_CD = '1'
+$AUTO_PUSHD = '1'
+$AUTO_SUGGEST = '1'
+$AUTO_SUGGEST_IN_COMPLETIONS = '1'
+# $BASH_COMPLETIONS = '/usr/share/bash-completion/completions'
+$EDITOR = aliases.expand_alias('eframe')
+
+$SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/p'ssh-agent.socket'
+
+# cat .cache/wal/sequences
+
+# Created by `userpath` on 2020-06-25 21:44:43
+$PATH.append('/home/brian/.local/bin')
+
+$fzf_history_binding = Keys.ControlR
