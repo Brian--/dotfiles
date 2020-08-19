@@ -1,0 +1,17 @@
+[user]
+	email = brian.brunner.bb@gmail.com
+	name = Brian Brunner
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[core]
+	excludesfile = /home/brian/.gitignore
+	pager = bat
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[pull]
+	rebase = true
+[alias]
+	ignore = "!gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; gi"

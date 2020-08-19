@@ -1,4 +1,8 @@
 # use 1 instead of ! bc it has other meanings
+
+aliases['gpsup'] = 'git push -u origin HEAD'
+
+# adapted from oh-my-zsh
 aliases['g'] = 'git'
 aliases['ga'] = 'git add'
 aliases['gaa'] = 'git add --all'
