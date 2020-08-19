@@ -17,6 +17,8 @@ from prompt_toolkit.keys import Keys
 
 $PATH.add(p'~/.local/bin', front=True)
 $PATH.add(p'~/.yarn/bin')
+$PATH.add(p'~/.local/bin')
+$PATH.add('~/.poetry/bin')
 
 $AUTO_CD = '1'
 $AUTO_PUSHD = '1'
@@ -29,7 +31,5 @@ $SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/p'ssh-agent.socket'
 
 # cat .cache/wal/sequences
 
-# Created by `userpath` on 2020-06-25 21:44:43
-$PATH.append('/home/brian/.local/bin')
 
 $fzf_history_binding = Keys.ControlR
