@@ -10,6 +10,7 @@ from aliases.pbcopy import *
 
 from prompt import *
 import long_command_notifier
+import mouse_status
 
 
 import regex as re
