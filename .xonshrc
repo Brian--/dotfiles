@@ -9,6 +9,8 @@ from aliases.git import *
 from aliases.pbcopy import *
 
 from prompt import *
+import long_command_notifier
+
 
 import regex as re
 from math import ceil, comb, cos, degrees, e as E, factorial, floor, gcd, hypot, inf as oo, log, log10, log2, modf, nan, perm, pi, radians, sin, sqrt, tan, tau
