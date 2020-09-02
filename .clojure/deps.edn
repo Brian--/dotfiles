@@ -11,15 +11,16 @@
 ;; Only the last :paths is kept and others are dropped.
 
 {:aliases
-   {:add {:extra-deps {find-deps
-                         {:git/url "https://github.com/holyjak/find-deps.git",
-                          :sha "88d60faf0db23cf4e2f8155ca82ae49fc6dea164"}},
+   {:add {:extra-deps
+            #:find-deps{find-deps
+                          {:git/url "https://github.com/holyjak/find-deps.git",
+                           :sha "88d60faf0db23cf4e2f8155ca82ae49fc6dea164"}},
           :main-opts ["-m" "find-deps.core" "-Fsave"]},
     :eastwood {:extra-deps #:jonase{eastwood #:mvn{:version "RELEASE"}},
                :main-opts ["-m" "eastwood.lint"
                            "{:source-paths,[\"src\"],:test-paths,[\"test\"]}"]},
     :nrepl {:main-opts ["-m" "nrepl.cmdline"]},
-    :outdated {:extra-deps {antq #:mvn{:version "0.5.0"}},
+    :outdated {:extra-deps #:antq{antq #:mvn{:version "0.5.0"}},
                :main-opts ["-m" "antq.core"]},
     :rebel {:extra-deps #:com.bhauman{rebel-readline #:mvn{:version "0.1.4"}},
             :main-opts ["-m" "rebel-readline.main"]},
